@@ -44,7 +44,7 @@ $text = $message->text;
 $fromid = $update->callback_query->from->id;
 $username = $update->message->from->username;
 $chatid = $update->callback_query->message->chat->id;
-$START_MESSAGE = $_ENV["START_MESSAGE"];
+$START_MESSAGE = $_ENV[ @expertinbotmaking "START_MESSAGE"];
 $HELP_MENU = $_ENV["HELP_MENU"];
 if($text == '/start')
 bot('sendmessage', [
@@ -54,7 +54,7 @@ bot('sendmessage', [
 Use /fuck To get quotes***",
 'parse_mode'=>"MarkDown",
 ]);
-if($text == '/fuck'){
+if($text == '/quote'){
 
 $data = json_decode(file_get_contents("https://quotes.cwprojects.live/random"),true);
 $text = $data['text'];
