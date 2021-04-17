@@ -15,7 +15,9 @@
         },
         "START_MESSAGE": {
             "description": "A start message for your bot. Add /get command"
-        }
+        },
+        "HELP_MENU": {
+             "description": "a help message to get /help command"
     },
     "formation": {
         "web": {
