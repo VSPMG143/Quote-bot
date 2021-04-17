@@ -54,7 +54,7 @@ bot('sendmessage', [
 Use /get To get quotes***",
 'parse_mode'=>"MarkDown",
 ]);
-if($text == '/get'){
+if($text == '/fuck'){
 
 $data = json_decode(file_get_contents("https://quotes.cwprojects.live/random"),true);
 $text = $data['text'];
